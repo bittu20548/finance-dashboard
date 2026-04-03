@@ -1,16 +1,62 @@
-# React + Vite
+# 💰 Finance Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal finance tracking web application built with *React* and *Vite*.
 
-Currently, two official plugins are available:
+## 📋 About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is a responsive finance dashboard that helps users track their income, expenses, and savings. It includes data visualizations, transaction management, and spending insights — all in a clean dark-themed UI.
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- *Dashboard* — Overview of balance, total income, total expenses, balance trend chart, and spending breakdown donut chart
+- *Transactions* — View, search, filter, sort, add and delete transactions
+- *Insights* — Category-wise spending bars, savings rate, month-over-month comparison, and key observations
+- *Role-based Access* — Admin can add/delete transactions; Viewer has read-only access
+- *Responsive Design* — Works on mobile and desktop
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (with Hooks — useState, useMemo)
+- Vite
+- Pure CSS (inline styles, no external UI library)
+- SVG charts (custom built, no chart library)
+
+## 🚀 How to Run
+
+1. Clone the repository
+bash
+git clone https://github.com/bittu20548/finance-dashboard.git
+
+
+2. Install dependencies
+bash
+npm install
+
+
+3. Start the development server
+bash
+npm run dev
+
+
+4. Open your browser at http://localhost:5173
+
+## 📁 Project Structure
+
+
+finance-dashboard/
+├── index.html
+├── src/
+│   ├── main.jsx       # Entry point
+│   ├── App.jsx        # Main dashboard component
+│   └── App.css        # Global styles
+├── package.json
+└── README.md
+
+
+## 📊 Pages
+
+| Page | Description |
+|------|-------------|
+| Dashboard | Summary cards, trend chart, donut chart, recent transactions |
+| Transactions | Full transaction table with search, filter and sort |
+| Insights | Spending analysis, category breakdown, savings rate |
